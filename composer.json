@@ -1,0 +1,31 @@
+{
+"name": "bruninoit/lfg",
+"type": "phpbb-extension",
+"description": "Block guest view after some topics viewed",
+"homepage": "https://github.com/bruninoit/lfg",
+"version": "0.1.0-a1",
+"time": "2015-11-01",
+"license": "GPL-2.0",
+"authors": [
+{
+"name": "brunino",
+"email": "brunino@altervista.org",
+"homepage": "http://www.phpbbrevolution.6te.net",
+"role": "Developer"
+}
+],
+"require": {
+"php": ">=5.3"
+},
+"extra": {
+"display-name": "Limit for Guest",
+"soft-require": {
+"phpbb/phpbb": "3.1.*@dev"
+},
+"version-check": {
+"host": "phpbbrevolution.6te.net",
+"directory": "/download/",
+"filename": "version.php/lfg"
+}
+}
+}
