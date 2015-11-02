@@ -1,0 +1,15 @@
+services:
+    bruninoit.lfg.listener:
+        class: bruninoit\lfg\event\lfg
+        arguments:
+            - @controller.helper
+            - @template
+            - @dbal.conn
+            - @user
+            - %core.root_path%
+            - %core.php_ext%
+            - @auth
+            - @request
+            - @config
+        tags:
+            - { name: event.listener }
